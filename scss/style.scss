@@ -9,7 +9,6 @@ $sc:skyblue;
 $font-hd:'Aref Ruqaa',helvetica;
 $font-gen:'Aref Ruqaa',helvetica;
 $font-foo:'Mystery Quest',helvetica;
-$asset-path:"/resources/images";
 @mixin box-shadow($shadow...) {
   -webkit-box-shadow: $shadow;
      -moz-box-shadow: $shadow;
@@ -116,7 +115,7 @@ a,.navbar2 a,.open a{
   //padding:0px 10px;
   /*-------------------HOME subtype----------------*/
   .home{
-    background: url(#{$asset-path}/confetti_trans.png) no-repeat center  fixed;
+    background-image: url("/resources/images/confetti_trans.png") no-repeat center  fixed;
     background-size: cover;
     background-color:#73264d;
     width:100%;
@@ -159,7 +158,7 @@ a,.navbar2 a,.open a{
   }
  /*-------------------ABOUT subtype----------------*/
   .about{
-    background: url(#{$asset-path}/confetti_trans.png) no-repeat center  fixed;
+    background-image: url("/resources/images/confetti_trans.png") no-repeat center  fixed;
     background-size: cover;
     background-color:#476b6b;
     width:100%;
@@ -233,7 +232,7 @@ a,.navbar2 a,.open a{
   } 
  /*-------------------PORTFOLIO subtype----------------*/
   .portfolio{
-     background: url(#{$asset-path}/confetti_trans.png) no-repeat center  fixed;
+    background-image: url("/resources/images/confetti_trans.png") no-repeat center  fixed;
     background-size: cover;
     background-color:#004d4d;
     width:100%;
@@ -312,8 +311,8 @@ a,.navbar2 a,.open a{
   }
 /*-------------------CONTACT subtype----------------*/
   .contact{
-     background: url('https://github.com/rkm09/FCC/blob/master/contact.png?raw=true') no-repeat center  fixed;
-  background-size: cover;
+    background-image: url('/resources/images/bg1_tr.jpeg') no-repeat center  fixed;
+    background-size: cover;
     background-color:#206040;
     width:100%;
     height:35rem;
@@ -358,7 +357,7 @@ a,.navbar2 a,.open a{
   }
  /*-------------------FOOTER subtype----------------*/
   .footer{
-    background: url('https://github.com/rkm09/FCC/blob/master/home.png?raw=true') no-repeat center  fixed;
+    background-image: url('/resources/images/bg2_tr.jpeg') no-repeat center  fixed;
     background-size: cover;
     background-color:#73264d;
     width:100%;
