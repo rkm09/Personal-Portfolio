@@ -193,21 +193,26 @@ a,.navbar2 a,.open a{
           text-align:center;
           letter-spacing:0.1rem;
         }
-        .photo{
-          
-         #imphoto{
-          display:block;
-          @include box-shadow(0 0 0.4rem #ffcccc);
-          transition:.2s ease;
-          border:3px solid #4d194d;
-          border-radius:50%;
-          margin-top:1rem;
-          margin-bottom:1rem;
-          margin-left:auto;
-          margin-right:auto;
-          background-color:#666666;
-            &:hover{
-              transform:translate(0,-3%);
+        .photo {
+          #imphoto {
+            display: block;
+            width: 250px;             /* Sets a fixed width for the circle container */
+            height: 250px;            /* Sets a matching fixed height */
+            object-fit: cover;        /* Crops proportionally without stretching */
+            object-position: center;   /* Centers your face within the frame */
+
+            @include box-shadow(0 0 0.4rem #ffcccc);
+            transition: .2s ease;
+            border: 3px solid #4d194d;
+            border-radius: 50%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #666666;
+
+            &:hover {
+              transform: translate(0, -3%);
               @include box-shadow(0 0 1.4rem #ffcccc);
             }
           }
