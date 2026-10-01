@@ -196,10 +196,11 @@ a,.navbar2 a,.open a{
         .photo {
           #imphoto {
             display: block;
-            width: 250px;             /* Sets a fixed width for the circle container */
-            height: 250px;            /* Sets a matching fixed height */
-            object-fit: cover;        /* Crops proportionally without stretching */
-            object-position: center;   /* Centers your face within the frame */
+            width: 250px !important;       /* Overrides Bootstrap's width: 100% */
+            height: 250px !important;      /* Forces matching height */
+            max-width: 250px !important;   /* Prevents expanding beyond container */
+            object-fit: cover;             /* Crops image cleanly without stretching */
+            object-position: center;       /* Centers the crop area */
 
             @include box-shadow(0 0 0.4rem #ffcccc);
             transition: .2s ease;
