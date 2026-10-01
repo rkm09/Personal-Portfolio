@@ -196,6 +196,7 @@ a,.navbar2 a,.open a{
         .photo {
           #imphoto {
             display: block;
+            object-fit: cover;
             @include box-shadow(0 0 0.4rem #ffcccc);
             transition: .2s ease;
             border: 3px solid #4d194d;
